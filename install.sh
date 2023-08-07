@@ -41,7 +41,7 @@ crc config set enable-cluster-monitoring true
 
 crc setup --log-level debug
 
-crc start --log-level debug
+crc start --log-level debug --pull-secret-file "${HOME}/pull-secret.json"
 
 # Setup haproxy
 

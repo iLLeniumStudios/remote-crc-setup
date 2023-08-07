@@ -31,6 +31,8 @@ echo "crc ALL=(root) NOPASSWD:ALL" | tee -a /etc/sudoers.d/crc
 chmod 0440 /etc/sudoers.d/crc
 ```
 
+- Download the pull secret from https://console.redhat.com/openshift/create/local and save it as `pull-secret.json` under `/home/crc/pull-secret.json`
+
 ## Installation
 
 - SSH as `crc` user created above (Do no use su -)
