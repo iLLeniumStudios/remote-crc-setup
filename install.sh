@@ -43,6 +43,8 @@ crc setup --log-level debug
 
 crc start --log-level debug --pull-secret-file "${HOME}/pull-secret.json"
 
+eval $(crc oc-env)
+
 # Setup haproxy
 
 sudo dnf install haproxy /usr/sbin/semanage -y
