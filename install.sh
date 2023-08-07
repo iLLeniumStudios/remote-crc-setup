@@ -110,6 +110,8 @@ oc patch ingresses.config.openshift.io cluster --type=merge --patch-file=ingress
 
 oc patch apiserver cluster --type=merge -p "{\"spec\":{\"servingCerts\": {\"namedCertificates\":[{\"names\":[\"api.${BASE_DOMAIN}\"],\"servingCertificate\": {\"name\": \"nip-secret\"}}]}}}"
 
+sleep 10s
+
 wait_for_clusteroperators
 
 USERNAME=$(crc console -ojson | jq -r '.clusterConfig.adminCredentials.username')
