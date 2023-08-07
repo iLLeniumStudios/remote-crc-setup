@@ -1,6 +1,6 @@
 # remote-crc-setup
 
-Allows you to setup a remote crc cluster
+Allows you to setup a remote crc cluster exposed at `https://console-openshift-console.apps.<local-ip>.nip.io`
 
 ## Minimum requirements
 
