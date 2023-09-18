@@ -33,7 +33,7 @@ sudo systemctl mask --now firewalld
 
 # Download crc
 CRC_VERSION=latest
-wget https://developers.redhat.com/content-gateway/rest/mirror/pub/openshift-v4/clients/crc/latest/${CRC_VERSION}/crc-linux-amd64.tar.xz
+wget https://developers.redhat.com/content-gateway/rest/mirror/pub/openshift-v4/clients/crc/${CRC_VERSION}/crc-linux-amd64.tar.xz
 tar -xvf crc-linux-amd64.tar.xz
 sudo mv crc-linux-${CRC_VERSION}-amd64/crc /usr/local/bin/
 sudo chmod +x /usr/local/bin/crc
