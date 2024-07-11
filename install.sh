@@ -32,7 +32,7 @@ sudo systemctl disable firewalld
 sudo systemctl mask --now firewalld
 
 # Download crc
-CRC_VERSION=2.33.0
+CRC_VERSION=2.38.0
 wget https://developers.redhat.com/content-gateway/rest/mirror/pub/openshift-v4/clients/crc/${CRC_VERSION}/crc-linux-amd64.tar.xz
 tar -xvf crc-linux-amd64.tar.xz
 sudo mv crc-linux-${CRC_VERSION}-amd64/crc /usr/local/bin/
